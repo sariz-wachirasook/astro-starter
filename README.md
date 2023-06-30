@@ -7,6 +7,7 @@ This is a clean Astro for outsourcify, with TailwindCSS and SCSS support.
 - please learn the Astro project structure: https://docs.astro.build/en/core-concepts/project-structure/
 - assets folder is for our Outsourcify developer experience, they will know why it's there
 - assets folder can be removed if you don't need it
+- i18n is a little bit complex, see https://github.com/yassinedoghri/astro-i18next for more information
 
 ## Requirements
 
@@ -24,10 +25,17 @@ This is a clean Astro for outsourcify, with TailwindCSS and SCSS support.
 
 ```json
 {
-  "dev": "astro dev", // start a development server
-  "start": "astro dev", // start a development server
-  "build": "astro build", // build your project
-  "preview": "astro preview", // preview your build
-  "astro": "astro" // run astro commands
+  "dev": "astro dev",
+  "start": "astro dev",
+  "build": "npx astro-i18next generate && astro build",
+  "preview": "astro preview",
+  "astro": "astro",
+  "generate:locale": "astro-i18next generate"
 }
 ```
+
+- `yarn dev` to start a development server
+- `yarn build` to build your project, it will generate the locales
+- `yarn preview` to preview your build
+- `yarn astro` to run astro commands
+- `yarn generate:locale` to generate the locales
