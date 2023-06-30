@@ -1,0 +1,16 @@
+// follow SMACSS folder structure or create your own
+@charset "UTF-8";
+
+// sass-utils
+@import './sass-utils/variables';
+@import './sass-utils/mixins';
+@import './sass-utils/functions';
+@import './sass-utils/helpers';
+
+// layouts
+@import './layouts/header';
+@import './layouts/footer';
+
+// components
+@import './components/button';
+@import './components/card';
