@@ -2,12 +2,13 @@
 
 This is a clean Astro for outsourcify, with TailwindCSS and SCSS support.
 
-## Before you start
+## Before you start (อ่านก่อน)
 
 - please learn the Astro project structure: https://docs.astro.build/en/core-concepts/project-structure/
 - assets folder is for our Outsourcify developer experience, they will know why it's there
 - assets folder can be removed if you don't need it
 - i18n is a little bit complex, see https://github.com/yassinedoghri/astro-i18next for more information
+- I already setup EN|TH|FR for example, EN will be the default language & path, while other paths will be generate when build, {env}/fr {env}/th
 
 ## Requirements
 

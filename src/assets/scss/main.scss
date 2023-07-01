@@ -1,4 +1,9 @@
-// follow SMACSS folder structure or create your own
+/*  
+    please follow SMACSS folder structure and BEM naming convention
+    
+    - SMACSS: the architecture that most of the projects use
+    - BEM: Block Element Modifier, naming convention for classes in HTML and CSS
+*/
 @charset "UTF-8";
 
 // sass-utils
@@ -6,6 +11,12 @@
 @import './sass-utils/mixins';
 @import './sass-utils/functions';
 @import './sass-utils/helpers';
+
+// base
+@import './base/base';
+@import './base/normalization';
+@import './base/state';
+@import './base/typography';
 
 // layouts
 @import './layouts/header';

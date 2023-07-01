@@ -1,0 +1,27 @@
+.is-hidden {
+  display: none !important;
+}
+
+.is-visible {
+  display: block !important;
+}
+
+.is-invisible {
+  visibility: hidden !important;
+}
+
+.is-mobile {
+  display: none !important;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: block !important;
+  }
+}
+
+.is-desktop {
+  display: block !important;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none !important;
+  }
+}
